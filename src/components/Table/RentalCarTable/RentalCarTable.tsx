@@ -59,7 +59,7 @@ export const RentalCarTable: FC<RentalCarTableProps> = ({ dataSource, selectedKe
     rowSelection={{
       type: 'radio',
       selectedRowKeys: selectedKey ? [selectedKey] : [],
-      hideSelectAll: true, // Optional: if you want to hide the select all checkbox
+      hideSelectAll: true,
       renderCell: () => '',
     }}
     size="small"
