@@ -27,7 +27,7 @@ export const App: FC = () => {
         <Layout.Content>
           <Map markers={carLocations} onClick={onMapClick} />
         </Layout.Content>
-        <Layout.Sider style={{ padding: 16 }} width="40%">
+        <Layout.Sider theme="light" width="40%">
           <div>
             <RentalCarTable dataSource={rentalCars} selectedKey={selectedCar?.id} onRowClick={onTableRowClick} />
             {selectedCar && (

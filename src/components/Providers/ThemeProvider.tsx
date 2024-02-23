@@ -4,6 +4,7 @@ import type { FC, ReactNode } from 'react';
 const themeConfig: ThemeConfig = {
   components: {
     Table: {
+      borderRadius: 0,
       fontSize: 12,
     },
   },

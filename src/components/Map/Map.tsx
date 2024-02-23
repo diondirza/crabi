@@ -18,7 +18,7 @@ export const Map: FC<MapProps> = ({ markers, onClick }) => {
 
   return (
     <Wrapper apiKey={API_KEY} render={render}>
-      <Content center={center} zoom={zoom} style={{ height: 'calc(100vh)', width: 'calc(60vw)' }} onClick={onClick}>
+      <Content center={center} zoom={zoom} style={{ height: 'calc(100vh)' }} onClick={onClick}>
         {markers.map(({ id, ...props }) => (
           <Marker key={id} {...props} onClick={onClick} />
         ))}
